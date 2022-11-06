@@ -27,15 +27,13 @@ def __init__():
 def create_proposal(sender: address, ) -> bool:
     # TODO: crete ERC-20 parameterized token
 
-    log Propose(owner)
+    log Propose(sender)
     return True
 
 
 @external
-def fund(sender: address: ) -> bool:
-    contract = '0x732E8B414aD2a9C6a513ea14Dc72B2EF20c52c39'
-
-    contract.mint(sender=sender)
+def fund(sender: address) -> bool:
+    # TODO: mint ERC-20
 
     log Fund(sender)
     return True
