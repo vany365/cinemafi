@@ -8,5 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ApeWorX/github-action@v1
+    - run: pip install --upgrade pip
     - run: ape compile --size
     - run: ape test -s
